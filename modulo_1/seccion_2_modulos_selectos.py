@@ -1,5 +1,7 @@
 from math import pi, radians, degrees, sin, cos, tan, asin, e, exp, log, ceil, floor, trunc
 from random import random, seed, randrange, randint, choice, sample
+from platform import platform, machine, processor, system, version, python_implementation, python_version_tuple
+
 
 # Probando las funciones del modulo 'math'
 ad = 90
@@ -47,4 +49,27 @@ my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(choice(my_list))
 print(sample(my_list, 5))
 print(sample(my_list, 10))
+
+# Probando la funcion 'platform()' del modulo 'platform'
+print(platform())
+print(platform(1))
+print(platform(0, 1))
+
+
+# Probando la funcion 'machine()'
+print(machine())
+
+# Probando la funcion 'processor()'
+print(processor())
+
+# Probando la funcion 'system()'
+print(system())
+
+# Probando la funcion 'version()'
+print(version())
+
+# Probando las funciones 'python_implemntation()' y 'python_version_tuple()'
+print(python_implementation())
+for atr in python_version_tuple():
+    print(atr)
 
